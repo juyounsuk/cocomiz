@@ -329,13 +329,9 @@ left:-250px;
 .arrow:nth-child(6){
 left:-60px;
 }
-
 .arrow:nth-child(7){
     right:-60px;
 }
-
-
-
 /* md pick 끝*/
 
 /* 기획전 */
@@ -505,9 +501,9 @@ left:-60px;
 .foot_top ul li a:hover{
     color: #ffffff;
 }
-
-
-
+footer{
+    height: 800px;
+}
 
 /* 라운트 텍스트 애니메이션 */
 .st1{
@@ -531,3 +527,8 @@ left:-60px;
     font-weight: 500;
 }
 
+/* 반응형 추가 */
+@media screen and (max-width:991px){
+    .wrap{width:100%}
+
+}
