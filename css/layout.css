@@ -143,7 +143,10 @@ nav ul>li ul li a:hover{
     font-weight: 700;
 }
 
-.main_banner{width: 100%;}
+.main_banner{      
+    width: 1900px;
+    margin:0 auto;
+}
 
 /* ************오늘만특가*********** */
 .title{
@@ -289,7 +292,7 @@ nav ul>li ul li a:hover{
 
 }
 #text_out:nth-child(2){    
-    animation-duration: 15s;
+    animation-duration: 25s;
     background-color: #55c288;
     font-size: 25px;
 }
@@ -530,6 +533,7 @@ footer{
 }
 .foot_top h1{
     margin-right: 80px;
+    margin-top: -40px;
 }
 .foot_top .login ul {
     display: none;
@@ -554,20 +558,30 @@ footer{
 .foot_top > ul li a:hover{
     color: #ffffff;
 }
-.foot_bottom > div{
-    display: none;    
+
+.foot_bottom>p{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.foot_bottom >p > a:hover{
+    font-weight: 500;
+}
+
+.com_info{display: none;}
+.com_info > a{
+    display: block;    
     position: absolute;
     top: 102px;
     left:250px;
 }
-.foot_bottom > div img{
+.com_info > a img{
     position: absolute;
     top: 0;
     left: 85px;
 }
-.foot_bottom > p{
-    background-color: #eee;
-    z-index: 99;
+.com_info > a:hover{
+    font-weight: 500;
 }
 
 /* 라운트 텍스트 애니메이션 */
@@ -583,14 +597,7 @@ footer{
     overflow: hidden;
     width: 100%;
 }
-.foot_bottom>p{
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.5;
-}
-.foot_bottom>p a:hover{
-    font-weight: 500;
-}
+
 
 /* 반응형 추가 */
 @media screen and (max-width:760px){
@@ -604,18 +611,18 @@ footer{
     }
     .item .item_list{
         width: 65%;
-        height: 700px;
+        height: 65%;
         margin:30px auto;
     }
     .item .item_list h3{
-        font-size: 30px;
+        font-size: 1.8em;
         padding-left: 20px;
     }
     .item .item_list h3 span{
-        font-size: 20px;
+        font-size: 1em;
     }
     .item .item_list .con_text{
-        font-size: 30px;
+        font-size: 1.8em;
         padding-left: 20px;
     }
     .item .item_list h4{
@@ -626,14 +633,14 @@ footer{
         width: 270px;
         height: 80px;
         line-height: 80px; 
-        font-size: 22px;
+        font-size: 1.3em;
     }
     .new_wrap .item{
         display: block;
     }
     .new_wrap .item .item_list{
         width: 65%;
-        height: 700px;
+        height: 65%;
        margin:30px auto;
     }     
     .item_list:nth-child(6),.item_list:nth-child(7),.item_list:nth-child(8),.item_list:nth-child(9),.item_list:nth-child(10){
@@ -671,7 +678,7 @@ footer{
     .info .inner{
         display: block;
         /* background-color: #9fd1b8; */
-        padding-top: 70px;
+        padding-top: 70px;        
     }
     .info .inner>div{
         width: 70%;
@@ -694,11 +701,11 @@ footer{
         /* background-color: #9fd1b8; */
     }
     .notice_con h2{
-        font-size: 25px;
+        font-size: 1.3em;
         padding:10px
     }
     .notice_con h3{
-        font-size: 20px;
+        font-size: 1.2em;
         padding:20px 10px;
     }
     .cs ul li{
@@ -707,11 +714,11 @@ footer{
         background-color: white;
     }
     .cs> ul li:nth-child(1) h2{
-        font-size: 30px;
+        font-size: 1.5em;
         line-height: 2;
     }
     .cs> ul li:nth-child(1) h3{
-        font-size: 25px;
+        font-size: 1.2em;
         margin-top: 10px;
         padding-bottom: 20px;
     }
@@ -724,42 +731,54 @@ footer{
     .text_banner02{
         z-index: -1;
         position:relative;
-        top: -690px;
-        background-color: none;      }
+        top: -600px;
+        background-color: rgba(159, 209, 184, 0);
+          }
 
     .foot{
         width: 100%;
         height: 300px;
-        margin:0 auto;  
-        background-color: #9fd1b8;   
+        margin:0 auto;     
+        position: relative;
     }
     .foot_top{
         display: block;
-        margin-left: 50px;
+        margin-left: 50px;  
+    }
+    .foot_top h1{
+        margin-top: 0;
     }
     .foot_top .login ul {
         display: flex;
-        width: 25%;
+        font-size: 0.9em;
     }
     .com_btn>div{
         display:block;
         margin-top: 40px;
     }
-    .foot_top ul{
+    .foot_top> ul{
         width:70%;
+        font-size: 0.9em;
     }
     .foot_top > ul li::after{
         content:"";
         padding: 0;
     }
-    .foot_bottom > div{
-        display: block;
+    .com_info{
+        display: block;           
     }
-    .foot_bottom > p{
-        padding-left: 20px;
-        padding-top: 10px;
-        font-size: 14px;
+    .com_info > p{
+        width: 95%;
+        font-size: 0.8em;
+        background-color: #eee;
+        position:absolute;
+        top: 130px;
+        left: 10px;
+        word-break: break-all;
+        z-index: 999;
         display: none;
     }
-
+    .foot_bottom>p{
+        display: none
+    }
 }
