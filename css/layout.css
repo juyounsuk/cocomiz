@@ -565,8 +565,7 @@ footer{
     top: 0;
     left: 85px;
 }
-.foot_bottom > p{
-    background-color: #eee;
+.foot_bottom > p{ 
     z-index: 99;
 }
 
@@ -608,14 +607,14 @@ footer{
         margin:30px auto;
     }
     .item .item_list h3{
-        font-size: 30px;
+        font-size: 1.8em;
         padding-left: 20px;
     }
     .item .item_list h3 span{
-        font-size: 20px;
+        font-size: 1em;
     }
     .item .item_list .con_text{
-        font-size: 30px;
+        font-size: 1.8em;
         padding-left: 20px;
     }
     .item .item_list h4{
@@ -626,7 +625,7 @@ footer{
         width: 270px;
         height: 80px;
         line-height: 80px; 
-        font-size: 22px;
+        font-size: 1.3em;
     }
     .new_wrap .item{
         display: block;
@@ -694,11 +693,11 @@ footer{
         /* background-color: #9fd1b8; */
     }
     .notice_con h2{
-        font-size: 25px;
+        font-size: 1.5em;
         padding:10px
     }
     .notice_con h3{
-        font-size: 20px;
+        font-size: 1.2em;
         padding:20px 10px;
     }
     .cs ul li{
@@ -707,11 +706,11 @@ footer{
         background-color: white;
     }
     .cs> ul li:nth-child(1) h2{
-        font-size: 30px;
+        font-size: 1.8em;
         line-height: 2;
     }
     .cs> ul li:nth-child(1) h3{
-        font-size: 25px;
+        font-size: 1.5em;
         margin-top: 10px;
         padding-bottom: 20px;
     }
@@ -732,6 +731,7 @@ footer{
         height: 300px;
         margin:0 auto;  
         background-color: #9fd1b8;   
+        position: relative;
     }
     .foot_top{
         display: block;
@@ -758,8 +758,13 @@ footer{
     .foot_bottom > p{
         padding-left: 20px;
         padding-top: 10px;
-        font-size: 14px;
+        font-size: 0.9em;
+        background-color: #eee;
         display: none;
+        position:absolute;
+        top: 130px;
+        left: 30px;
+        z-index: 999;
     }
 
 }
