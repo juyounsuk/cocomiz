@@ -533,11 +533,12 @@ footer{
 }
 .foot_top .login ul {
     display: none;
-    justify-content: space-between;
-    width: 120px;
     font-size: 1.1em;
     margin-bottom: 10px;
     color: #333;
+}
+.foot_top .login ul li{
+    margin-right: 20px;
 }
 .foot_top .login ul li:hover{
     font-weight: 700;
@@ -545,9 +546,6 @@ footer{
 .foot_top > ul{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    font-size: 1.1em;
-    color:#555;
 }
 .foot_top > ul li::after{
     content:"|";
@@ -605,18 +603,20 @@ footer{
         display: block;
     }
     .item .item_list{
-        width: 442px;
-        height: 680px;
-       margin:20px auto;
+        width: 65%;
+        height: 700px;
+        margin:30px auto;
     }
     .item .item_list h3{
         font-size: 30px;
+        padding-left: 20px;
     }
     .item .item_list h3 span{
         font-size: 20px;
     }
     .item .item_list .con_text{
         font-size: 30px;
+        padding-left: 20px;
     }
     .item .item_list h4{
         margin-right: 150px;
@@ -632,9 +632,9 @@ footer{
         display: block;
     }
     .new_wrap .item .item_list{
-        width: 442px;
-        height: 680px;
-       margin:20px auto;
+        width: 65%;
+        height: 700px;
+       margin:30px auto;
     }     
     .item_list:nth-child(6),.item_list:nth-child(7),.item_list:nth-child(8),.item_list:nth-child(9),.item_list:nth-child(10){
         display: none;
@@ -647,7 +647,7 @@ footer{
         display:block;
     }
     .plan_con> div{
-        width: 500px;
+        width: 60%;
         margin: 30px auto;
     }
     .plan_con> div:nth-child(1)>img:nth-child(1){
@@ -662,7 +662,7 @@ footer{
     }
     .plan_con> div >div{  
         margin-top: 15px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
     .plan_con> div > p{
         display: none;
@@ -670,14 +670,17 @@ footer{
 
     .info .inner{
         display: block;
+        /* background-color: #9fd1b8; */
+        padding-top: 70px;
     }
     .info .inner>div{
-        width: 500px;
-        margin:30px auto;
+        width: 70%;
+        margin:20px auto;
         background-color:rgba(255, 255, 255, 0);
     }  
     .notice_con ul, .cs> ul{
-        display: block;
+        display: block; 
+        z-index: 999;       
     }
     .notice_con ul li{
         width: 90%;
@@ -688,6 +691,7 @@ footer{
     .notice_con ul li:nth-child(3){
         height: 40px;
         padding-bottom: 20px;
+        /* background-color: #9fd1b8; */
     }
     .notice_con h2{
         font-size: 25px;
@@ -700,6 +704,7 @@ footer{
     .cs ul li{
         width: 80%;
         margin: 20px auto;
+        background-color: white;
     }
     .cs> ul li:nth-child(1) h2{
         font-size: 30px;
@@ -719,32 +724,33 @@ footer{
     .text_banner02{
         z-index: -1;
         position:relative;
-        top:-350px;
-        background-color: #9fd1b8;  
-        overflow: hidden;
-        width: 100%;
-        display: none;
-    }
+        top: -690px;
+        background-color: none;      }
 
     .foot{
         width: 100%;
         height: 300px;
-        margin:0 auto;     
+        margin:0 auto;  
+        background-color: #9fd1b8;   
     }
     .foot_top{
         display: block;
-        margin-left: 30px;
+        margin-left: 50px;
     }
     .foot_top .login ul {
         display: flex;
+        width: 25%;
     }
     .com_btn>div{
         display:block;
         margin-top: 40px;
     }
     .foot_top ul{
-        margin-top: 0;
-        width: 73%;
+        width:70%;
+    }
+    .foot_top > ul li::after{
+        content:"";
+        padding: 0;
     }
     .foot_bottom > div{
         display: block;
