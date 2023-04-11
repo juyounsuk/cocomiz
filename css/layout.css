@@ -292,7 +292,7 @@ nav ul>li ul li a:hover{
 
 }
 #text_out:nth-child(2){    
-    animation-duration: 15s;
+    animation-duration: 25s;
     background-color: #55c288;
     font-size: 25px;
 }
@@ -533,6 +533,7 @@ footer{
 }
 .foot_top h1{
     margin-right: 80px;
+    margin-top: -40px;
 }
 .foot_top .login ul {
     display: none;
@@ -739,6 +740,9 @@ footer{
     .foot_top{
         display: block;
         margin-left: 50px;
+    }
+    .foot_top h1{
+        margin-top: 0;
     }
     .foot_top .login ul {
         display: flex;
