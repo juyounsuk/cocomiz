@@ -143,10 +143,7 @@ nav ul>li ul li a:hover{
     font-weight: 700;
 }
 
-.main_banner{      
-    width: 1900px;
-    margin:0 auto;
-}
+.main_banner{width: 100%;}
 
 /* ************오늘만특가*********** */
 .title{
@@ -292,7 +289,7 @@ nav ul>li ul li a:hover{
 
 }
 #text_out:nth-child(2){    
-    animation-duration: 25s;
+    animation-duration: 15s;
     background-color: #55c288;
     font-size: 25px;
 }
@@ -533,7 +530,6 @@ footer{
 }
 .foot_top h1{
     margin-right: 80px;
-    margin-top: -40px;
 }
 .foot_top .login ul {
     display: none;
@@ -569,7 +565,8 @@ footer{
     top: 0;
     left: 85px;
 }
-.foot_bottom > p{ 
+.foot_bottom > p{
+    background-color: #eee;
     z-index: 99;
 }
 
@@ -611,14 +608,14 @@ footer{
         margin:30px auto;
     }
     .item .item_list h3{
-        font-size: 1.8em;
+        font-size: 30px;
         padding-left: 20px;
     }
     .item .item_list h3 span{
-        font-size: 1em;
+        font-size: 20px;
     }
     .item .item_list .con_text{
-        font-size: 1.8em;
+        font-size: 30px;
         padding-left: 20px;
     }
     .item .item_list h4{
@@ -629,7 +626,7 @@ footer{
         width: 270px;
         height: 80px;
         line-height: 80px; 
-        font-size: 1.3em;
+        font-size: 22px;
     }
     .new_wrap .item{
         display: block;
@@ -697,11 +694,11 @@ footer{
         /* background-color: #9fd1b8; */
     }
     .notice_con h2{
-        font-size: 1.5em;
+        font-size: 25px;
         padding:10px
     }
     .notice_con h3{
-        font-size: 1.2em;
+        font-size: 20px;
         padding:20px 10px;
     }
     .cs ul li{
@@ -710,11 +707,11 @@ footer{
         background-color: white;
     }
     .cs> ul li:nth-child(1) h2{
-        font-size: 1.8em;
+        font-size: 30px;
         line-height: 2;
     }
     .cs> ul li:nth-child(1) h3{
-        font-size: 1.5em;
+        font-size: 25px;
         margin-top: 10px;
         padding-bottom: 20px;
     }
@@ -735,14 +732,10 @@ footer{
         height: 300px;
         margin:0 auto;  
         background-color: #9fd1b8;   
-        position: relative;
     }
     .foot_top{
         display: block;
         margin-left: 50px;
-    }
-    .foot_top h1{
-        margin-top: 0;
     }
     .foot_top .login ul {
         display: flex;
@@ -765,13 +758,8 @@ footer{
     .foot_bottom > p{
         padding-left: 20px;
         padding-top: 10px;
-        font-size: 0.9em;
-        background-color: #eee;
+        font-size: 14px;
         display: none;
-        position:absolute;
-        top: 130px;
-        left: 30px;
-        z-index: 999;
     }
 
 }
