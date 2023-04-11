@@ -47,6 +47,7 @@ header{margin-top: 20px;}
     display: flex;
     justify-content:space-between;
     height: 100px;
+    position: relative;
 }
 #logo img{
     width: 220px;
@@ -55,6 +56,40 @@ header{margin-top: 20px;}
 #logo a{
     display: block;
 }
+
+/* 토글메뉴 */
+#main_toggle{
+    position: absolute;
+    right:0;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    display: none;
+}
+#main_toggle div{
+    height: 6px;
+    background-color:black;
+    border-radius: 3px;
+    margin-bottom: 16px;    
+}
+#main_toggle.on div:nth-child(1){
+    background-color:#003CA6;
+    transition-duration: 0.3s;
+}
+#main_toggle.on div:nth-child(2){
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+    background-color: white;
+}
+#main_toggle.on div:nth-child(3){
+    transform: translateY(-22px) rotate(-45deg);
+    transition-duration: 0.3s;
+    background-color: white;
+}
+
+
+
 nav{
     width: 920px;
     font-size: 1.1em;
@@ -209,7 +244,7 @@ nav ul>li ul li a:hover{
 .new .new_list a:hover{
     font-weight: 600;
 }
-.new_wrap ul{
+.new_wrap .item{
     display: flex;
     flex-wrap: wrap;       
 }
@@ -367,6 +402,9 @@ left:-60px;
 .plan_con> div >div>div{
     margin-right: 20px;
 }
+.plan_con> div >div>div img{
+    border-radius: 10px;
+}
 .plan_more{
     height: 40px;
     margin-top: 35px;
@@ -403,6 +441,10 @@ left:-60px;
 /* 기획전 끝 */
 
 /* 공지/고객센터 */
+footer{
+    height: 800px;    
+}
+
 .info{
     z-index: 999;
     margin-top: 130px;
@@ -478,8 +520,10 @@ left:-60px;
 .cs> ul li:nth-child(2) img{
     height: 100px;
 }
+
 .foot{
     margin-top: 200px;
+    position: relative;
 }
 .foot_top{
     display: flex;
@@ -487,22 +531,45 @@ left:-60px;
 .foot_top h1{
     margin-right: 80px;
 }
-.foot_top ul{
+.foot_top .login ul {
+    display: none;
+    justify-content: space-between;
+    width: 120px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.foot_top .login ul li:hover{
+    font-weight: 700;
+}
+.foot_top > ul{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
     font-size: 1.1em;
     color:#555;
 }
-.foot_top ul li::after{
+.foot_top > ul li::after{
     content:"|";
     padding: 0 10px;
 }
-.foot_top ul li a:hover{
+.foot_top > ul li a:hover{
     color: #ffffff;
 }
-footer{
-    height: 800px;
+.foot_bottom > div{
+    display: none;    
+    position: absolute;
+    top: 102px;
+    left:250px;
+}
+.foot_bottom > div img{
+    position: absolute;
+    top: 0;
+    left: 85px;
+}
+.foot_bottom > p{
+    background-color: #eee;
+    z-index: 99;
 }
 
 /* 라운트 텍스트 애니메이션 */
@@ -528,7 +595,165 @@ footer{
 }
 
 /* 반응형 추가 */
-@media screen and (max-width:991px){
-    .wrap{width:100%}
+@media screen and (max-width:760px){
+    .inner{width: 100%;}
+    .header_top form{
+        display: none;
+    }
+
+    .item{
+        display: block;
+    }
+    .item .item_list{
+        width: 442px;
+        height: 680px;
+       margin:20px auto;
+    }
+    .item .item_list h3{
+        font-size: 30px;
+    }
+    .item .item_list h3 span{
+        font-size: 20px;
+    }
+    .item .item_list .con_text{
+        font-size: 30px;
+    }
+    .item .item_list h4{
+        margin-right: 150px;
+        margin-top: 10px;
+    }
+    .btn{
+        width: 270px;
+        height: 80px;
+        line-height: 80px; 
+        font-size: 22px;
+    }
+    .new_wrap .item{
+        display: block;
+    }
+    .new_wrap .item .item_list{
+        width: 442px;
+        height: 680px;
+       margin:20px auto;
+    }     
+    .item_list:nth-child(6),.item_list:nth-child(7),.item_list:nth-child(8),.item_list:nth-child(9),.item_list:nth-child(10){
+        display: none;
+    }
+
+    .goods:nth-child(1), .goods:nth-child(2), .goods:nth-child(4), .goods:nth-child(5){
+    }
+
+    .plan_con{
+        display:block;
+    }
+    .plan_con> div{
+        width: 500px;
+        margin: 30px auto;
+    }
+    .plan_con> div:nth-child(1)>img:nth-child(1){
+        position: absolute;
+        top: -50px;
+        left: 120px;
+    }
+    .plan_con> div:nth-child(2)>img:nth-child(1){
+        position: absolute;
+        top: 500px;
+        left: 520px;
+    }
+    .plan_con> div >div{  
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+    .plan_con> div > p{
+        display: none;
+    }
+
+    .info .inner{
+        display: block;
+    }
+    .info .inner>div{
+        width: 500px;
+        margin:30px auto;
+        background-color:rgba(255, 255, 255, 0);
+    }  
+    .notice_con ul, .cs> ul{
+        display: block;
+    }
+    .notice_con ul li{
+        width: 90%;
+        height: 250px;
+        margin: 20px auto;        
+        background-color: white;
+    }
+    .notice_con ul li:nth-child(3){
+        height: 40px;
+        padding-bottom: 20px;
+    }
+    .notice_con h2{
+        font-size: 25px;
+        padding:10px
+    }
+    .notice_con h3{
+        font-size: 20px;
+        padding:20px 10px;
+    }
+    .cs ul li{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .cs> ul li:nth-child(1) h2{
+        font-size: 30px;
+        line-height: 2;
+    }
+    .cs> ul li:nth-child(1) h3{
+        font-size: 25px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .cs> ul li:nth-child(2){
+        padding:20px 0;
+    }
+    .cs> ul li:nth-child(2) img{
+        height: 150px;
+    }
+    .text_banner02{
+        z-index: -1;
+        position:relative;
+        top:-350px;
+        background-color: #9fd1b8;  
+        overflow: hidden;
+        width: 100%;
+        display: none;
+    }
+
+    .foot{
+        width: 100%;
+        height: 300px;
+        margin:0 auto;     
+    }
+    .foot_top{
+        display: block;
+        margin-left: 30px;
+    }
+    .foot_top .login ul {
+        display: flex;
+    }
+    .com_btn>div{
+        display:block;
+        margin-top: 40px;
+    }
+    .foot_top ul{
+        margin-top: 0;
+        width: 73%;
+    }
+    .foot_bottom > div{
+        display: block;
+    }
+    .foot_bottom > p{
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 14px;
+        display: none;
+    }
 
 }
