@@ -70,7 +70,12 @@ $(function(){
         return num;
     }
 });
- 
 
-
+$(function(){
+    $('.foot_bottom>div').hover(function(){
+        $(this).find('p').stop().fadeIn()
+     },function(){
+       $(this).find('p').stop().fadeOut()
+     }); 
+});
 
