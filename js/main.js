@@ -72,10 +72,9 @@ $(function(){
 });
 
 $(function(){
-    $('.foot_bottom>div').hover(function(){
+    $('.com_info>a').click(function(){
         $(this).find('p').stop().fadeIn()
      },function(){
        $(this).find('p').stop().fadeOut()
-     }); 
+     });
 });
-
