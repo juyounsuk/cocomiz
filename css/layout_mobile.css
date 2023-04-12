@@ -8,6 +8,10 @@
     }
     nav{display: none;}
 
+    .main_banner{      
+        width: 100%;
+    }
+    
     .item{
         display: block;
     }
@@ -51,25 +55,31 @@
 
     .plan_con{
         display:block;
+        width: 100%;
     }
     .plan_con> div{
-        width: 60%;
-        margin: 30px auto;
+        width: 90%;
+        margin:50px auto;
     }
     .plan_con> div:nth-child(1)>img:nth-child(1){
         position: absolute;
-        top: -50px;
-        left: 120px;
+        top: -30px;
+        left: 0;
+        width: 20%;
     }
     .plan_con> div:nth-child(2)>img:nth-child(1){
         position: absolute;
-        top: 500px;
-        left: 520px;
+        top: 220px;
+        right: 20px;
+        width: 30%;
     }
-    .plan_con> div >div{  
-        margin-top: 15px;
-        margin-bottom: 50px;
+    .plan_con> div>img:nth-child(2){
+        width: 90%;
     }
+    .plan_con> div >div{
+        display: none;
+    }
+
     .plan_con> div > p{
         display: none;
     }
@@ -77,7 +87,6 @@
     .info .inner{
         display: block;
         /* background-color: #9fd1b8; */
-        padding-top: 70px;        
     }
     .info .inner>div{
         width: 70%;
