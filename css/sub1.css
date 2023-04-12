@@ -4,9 +4,12 @@
 .sub_depth{
     display: flex;
     justify-content: right;
-    font-size: 1.1em;
     margin: 70px 0;
 } 
+.sub_depth h3{
+    font-size: 1.1em;
+    font-weight: 400;
+}
 .sub_depth a:hover{
     color: #f69889;
 }
