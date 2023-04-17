@@ -63,7 +63,11 @@
 .bot_banner img{
     border-radius: 20px;
 }
+.bot_banner{
+    margin-bottom: 90px;
+}
 .foot{
     background-color: #ddd;
-    padding: 100px 0;
+    padding-top:5px ;
+    padding-bottom: 50px;
 }
